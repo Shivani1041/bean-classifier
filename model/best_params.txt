@@ -1,0 +1,5 @@
+Logistic Regression: {'clf__C': 20}
+Decision Tree: {'clf__max_depth': 10, 'clf__min_samples_leaf': 5}
+KNN: {'clf__n_neighbors': 11}
+Naive Bayes: {'clf__var_smoothing': 1e-09}
+Support Vector Machine: {'clf__C': 20, 'clf__kernel': 'rbf'}
