@@ -23,7 +23,7 @@ demonstrated in an interactive Streamlit web application.
 ## c. GitHub Repository
 https://github.com/Shivani1041/bean-classifier
 
-Live Streamlit App: <PASTE YOUR STREAMLIT APP LINK HERE>
+Live Streamlit App: https://bean-classifier-sc.streamlit.app/
 
 ## d. Models Used
 
