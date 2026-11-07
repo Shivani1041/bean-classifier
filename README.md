@@ -50,7 +50,7 @@ AUC is computed using one-vs-rest (OVR) strategy with weighted averaging.
 | KNN                    | Very close to Logistic Regression on all metrics (accuracy 92.24%, AUC 0.9875). Performance depends on feature scaling — without StandardScaler the results are noticeably worse. The main downside is higher prediction latency since it searches the full training set at inference time. |
 | Naive Bayes            | Lowest accuracy (76.17%) and MCC (0.7123), but a surprisingly high AUC (0.9639), meaning its class probability estimates are reasonable even though its hard predictions are less accurate. The independence assumption between features likely hurts here because bean shape features are highly correlated (e.g., Area and ConvexArea). |
 | Support Vector Machine | Best overall model — highest accuracy (93.01%), highest AUC (0.9941), and highest MCC (0.9154). The RBF kernel captures non-linear boundaries effectively, and the scaled feature space helps it separate the 7 classes cleanly. The trade-off is longer training time compared to the other models. |
-| **Overall Winner**     | **Support Vector Machine** — best on accuracy, AUC, and MCC. Logistic Regression is a close second and may be preferred when training speed or interpretability matters. |
+| **Overall Winner**     | **Support Vector Machine** — highest on all six metrics: Accuracy (0.9301), AUC (0.9941), Precision (0.9303), Recall (0.9301), F1 (0.9301), and MCC (0.9154). Logistic Regression is a close second across all metrics and may be preferred when training speed or interpretability matters. |
 
 ## e. Streamlit App Features
 - **CSV upload** — upload `test_data.csv` (or any compatible test file) from the sidebar
